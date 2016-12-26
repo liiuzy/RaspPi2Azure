@@ -18,7 +18,7 @@ class Utility:
 
 
     def GetIoTHubSharedAccessKeyValue(self):
-        iotHubSharedAccessKey = self.__GetOptionValue('IoT', 'Shared Access Key')
+        iotHubSharedAccessKey = self.__GetOptionValue('IoT', 'Shared Access Key Value')
 
         return iotHubSharedAccessKey
 
@@ -38,4 +38,4 @@ class Utility:
     def GetEventHubSharedAccessKeyValue(self):
         eventHubSharedAccessKeyValue = self.__GetOptionValue('Event Hub', 'Shared Access Key Value')
 
-        return eventHubSharedAccessKeyValue()   
+        return eventHubSharedAccessKeyValue  
