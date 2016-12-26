@@ -10,7 +10,7 @@ class Utility:
 
         return optionValue
 
-    
+
     def GetIoTHubHostName(self):
         iotHubHostName = self.__GetOptionValue('IoT', 'Host Name')
         
