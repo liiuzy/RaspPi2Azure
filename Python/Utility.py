@@ -38,4 +38,4 @@ class Utility:
     def GetEventHubSharedAccessKeyValue(self):
         eventHubSharedAccessKeyValue = self.__GetOptionValue('Event Hub', 'Shared Access Key Value')
 
-        return GetEventHubSharedAccessKeyValue   
+        return eventHubSharedAccessKeyValue()   

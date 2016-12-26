@@ -24,8 +24,7 @@ for i in range(0, 450):
     temperature = senseHat.get_temperature()
     humidity = senseHat.get_humidity()
     currentTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-
-    #tempJson = {'DeviceID':'LZY-R-301', 'Temperature':temperature, 'Humidity':humidity, 'Time':currentTime, 'Device':'Raspberry Pi 3', 'OS':'Raspbian'}
+    
     tempJson = {'DeviceID':deviceID, 'Temperature':temperature, 'Humidity':humidity, 'Time':currentTime, 'DeviceModel':deviceModel, 'OS':os}
 
     serviceBusService.send_event(hubName, tempJson)
