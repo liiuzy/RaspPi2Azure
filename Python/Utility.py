@@ -1,7 +1,6 @@
 import ConfigParser
 
 class Utility:
-
     def __GetOptionValue(self, section, option):
         configParser = ConfigParser.SafeConfigParser()
         configParser.read('azure.cfg')
@@ -16,11 +15,11 @@ class Utility:
         
         return iotHubHostName
 
-
+    
     def GetIoTHubSharedAccessKeyValue(self):
-        iotHubSharedAccessKey = self.__GetOptionValue('IoT', 'Shared Access Key Value')
+        iotHubSharedAccessKeyValue = self.__GetOptionValue('IoT', 'Shared Access Key Value')
 
-        return iotHubSharedAccessKey
+        return iotHubSharedAccessKeyValue
 
 
     def GetEventHubNamespace(self):
